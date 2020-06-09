@@ -43,7 +43,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-.input-box{
+
+.input-box {
   margin-bottom: 40px;
   padding: 7.5px 15px;
   width: 100%;
@@ -65,7 +66,7 @@ h1 {
   outline: none;
 }
 
-.dk {
+.create-acc {
   position: absolute;
   top: 15px;
   left: 600px;

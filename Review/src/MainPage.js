@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import './MainPage.css';
 
-class App extends Component {
+class MainPage extends Component {
     render() {
         return (
             <div>
@@ -13,7 +13,7 @@ class App extends Component {
                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <div className="container">
                                 <img src={require("./Pic/matrix.jpg")} id="img1" alt="Ảnh bị lỗi" />
-                                <button type="button" style={{color: 'black'}} className="centered">
+                                <button type="button" className="centered">
                                     <h1>Phim Ảnh</h1>
                                     <p>
                                         Hòa mình vào thế giới điện ảnh đầy mê hoặc
@@ -26,7 +26,7 @@ class App extends Component {
                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <div className="container">
                                 <img src={require("./Pic/sekiro2.jpg")} id="img2" alt="Ảnh bị lỗi" />
-                                <button type="button" style={{color: 'black'}} className="centered">
+                                <button type="button" className="centered">
                                     <h1>Game</h1>
                                     <p> 
                                         Xách kiếm lên và bảo vệ thế giới 
@@ -38,7 +38,7 @@ class App extends Component {
                         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <div className="container">
                                 <img src= {require("./Pic/eva.jpg")} id="img3" alt="Ảnh bị lỗi" />
-                                <button type="button" style={{color: 'black'}} className="centered">
+                                <button type="button" className="centered">
                                     <h1>Truyện</h1>
                                     <p>
                                         Cùng bước đến những vùng đất mới
@@ -56,4 +56,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default MainPage;
