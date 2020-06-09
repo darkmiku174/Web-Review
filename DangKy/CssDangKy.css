@@ -8,16 +8,16 @@
 }
 
 header {
-  background-color: white;
   height: 110px;
 }
 
 main {
-  background-color: white;
+  background-image: url("night.png");
+  background-repeat: no-repeat;
+/*  background-color: white;*/
   min-height: 300px;
   padding: 7.5px 15px;
 }
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .btn-box button {
-	width: 300px;
+  width: 370px;
   padding: 9px 15px;
   border-radius: 2px;
   background-color: #009999;
