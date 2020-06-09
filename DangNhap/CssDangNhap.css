@@ -53,16 +53,17 @@ h1 {
 
 .btn-box {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .btn-box button {
-  padding: 7.5px 15px;
+  padding: 9px 15px;
   border-radius: 2px;
   background-color: #009999;
   color: #ffffff;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .dk {
