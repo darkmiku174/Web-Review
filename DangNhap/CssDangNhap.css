@@ -1,74 +1,81 @@
 @charset "utf-8";
 /* CSS Document */
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-header{
-    background-color: white;
-	height: 110px;
-}
-main{
-    background-color: white;
-    min-height: 300px;
-  	 padding: 7.5px 15px;
-}
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 
+header {
+  background-color: white;
+  height: 110px;
 }
-.login-form{
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 15px;
-    border: 2px; 
-    border-radius: 10px;
-	position: relative;
-	right: 300px;
 
+main {
+  background-color: white;
+  min-height: 300px;
+  padding: 7.5px 15px;
 }
-h1{
-    color: #009999;
-    font-size: 20px;
-    margin-bottom: 30px;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.input-box{
-    margin-bottom: 40px;
-	
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px; 
+  border-radius: 10px;
+  position: relative;
+  right: 300px;
 }
-.input-box input{
-    padding: 7.5px 15px;
-    width: 100%;
-    border: 1px solid #cccccc;
-    outline: none;
+
+h1 {
+  color: #009999;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
-.btn-box{
-    text-align: right;
-    margin-top: 30px;
+
+.input-box {
+  margin-bottom: 40px;
 }
-.btn-box button{
-    padding: 7.5px 15px;
-    border-radius: 2px;
-    background-color: #009999;
-    color: #ffffff;
-    border: none;
-    outline: none;
+
+.input-box input {
+  padding: 7.5px 15px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  outline: none;
 }
-.dk{
-	position: absolute;
-	top: 15px;
-	left: 600px;
+
+.btn-box {
+  text-align: right;
+  margin-top: 30px;
 }
-.block
-{
-	display: block;
+
+.btn-box button {
+  padding: 7.5px 15px;
+  border-radius: 2px;
+  background-color: #009999;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.dk {
+  position: absolute;
+  top: 15px;
+  left: 600px;
+}
+
+.block {
+  display: block;
   width: 300px;
   border: none;
   background-color: #009999;

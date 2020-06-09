@@ -1,73 +1,74 @@
-body{
-      font-size:12px;
-       width:100%;
-       margin:0px auto;
-       background-color: white;
-		background-repeat: no-repeat;
-       }
-#top{
-      width:100%;
-      height: 150px;
-      background-color: white;
-      font-size:16px;
-      background-image:url("Logo2.jpg");
-      background-repeat:no-repeat;
-      }
-#bottom{
-     height: 10px;
-     background: White;
-     line-height: 10px;
-     font-size:16px;
-		color: black;
-	padding: 50px 0 0 0;
-     }
+body {
+    font-size:12px;
+    width:100%;
+    margin:0px auto;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#top {
+    width:100%;
+    height: 150px;
+    background-color: white;
+    font-size:16px;
+    background-image:url("Logo2.jpg");
+    background-repeat:no-repeat;
+}
+#bottom {
+    height: 10px;
+    background: White;
+    line-height: 10px;
+    font-size:16px;
+    color: black;
+    padding: 50px 0 0 0;
+}
 
 .container {
-  position: relative;
-  text-align: center;
-  color: white;
-	
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 65%;
-  padding: 20px;
-  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 65%;
+    padding: 20px;
+    text-align: center;
 }
+
 .container:hover {
     transform: scale(1.5);
 }
-#img1{
-	 filter: blur(5px);
-  -webkit-filter: blur(5px);
+#img1 {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
 }
 #img2{
-	 filter: blur(3px);
-  -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 #img3{
-	 filter: blur(2px);
-  -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 .row {
-  display: flex;
+    display: flex;
 }
 
 .column {
-  flex: 33.33%;
-  padding: 5px;
+    flex: 33.33%;
+    padding: 5px;
 }
-button{
-	opacity: 0.5;
+button {
+    opacity: 0.5;
 }
