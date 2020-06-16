@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./package/css/swiper.min.css">
+ <style>
+    body {
+      background-image: url("../DangKy/night.png");
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 1000px;
+      height: 500px;
+	 }
+	a{
+	position: absolute;
+    top: 70%;
+    left: 30%;
+	color: 	#555555;
+	font-weight: bold;
+	font-size: 50px;
+	border: 3px solid #f1f1f1;
+	padding: 20px;
+    text-align: center;
+    
+		
+	 }
+  </style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(./images/se.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/mgs.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/ds.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/tw.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/mh.png)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/dso.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/fp.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/c6.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/p4g.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
+      <div class="swiper-slide" style="background-image:url(./images/cbp.png)"><a href="#">Tìm Hiểu Thêm</a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="./package/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', 
+	{
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+     },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
