@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ReviewPage</title>
+    <link rel="stylesheet" href="Review.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+<body>
+	<script>
+      $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+        $('nav ul li.btn span').toggleClass("show");
+      });
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}	
+    </script>
+	<nav>
+  		<ul>
+			<li class="logo">ME<span style="color: aqua">GP.COM</span></li>
+			<li class="btn"><span class="fas fa-bars"></span></li>
+			<div class="items">
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="#">Game</a></li>
+			<li><a href="#">Phim</a></li>
+			<li><a href="#">Truyện</a></li>
+			<li><a href="#">Giới Thiệu</a></li>
+			</div>
+				<li class="search-icon">
+					  <input type="search" placeholder="Tìm Kiếm">
+					  <label class="icon">
+						<span class="fas fa-search"></span>
+					  </label>
+        		</li>
+		</ul>
+	</nav>
+		<div id="trai">
+		</div>
+		<div id="giua">
+			<div id="giuatrai">
+				<p><h1 align="center">Death Stranding</h1></p>
+				<img src="./images/ds.jpg" width="100%" height="300">
+				<p>
+				<h3>Giới Thiệu</h3>
+				Sau hơn ba năm chờ đợi và đoán mò đoán non, cuối cùng thì Death Stranding cũng được chính thức phát hành. Tuy đây là tựa game đầu tay của nhà phát triển Kojima Productions mới được thành lập, nhưng rõ ràng cái tên Hideo Kojima đã quá quen thuộc với fan ruột của series Metal Gear Solid. Thế nhưng, dù ai nói ngả nói nghiêng, tôi vẫn sẽ khẳng định lại một lần nữa đây không phải là tựa game dành cho tất cả mọi người. Trải nghiệm game đòi hỏi người chơi một số đức tính cực kỳ cần thiết như kiên nhẫn và có sức khỏe thật tốt để vượt qua muôn vàn thử thách đi đến cuối trò chơi.
+				<h3>Điểm số</h3>
+				<table>
+				  <tr>
+					<td>Metacritic: 82/100</td>
+					<td>Famitsu: 40/40</td>
+				  </tr>
+				  <tr>
+					<td>Easy Allies: 8.0/10</td>
+					<td>GameRevolution: 5/5</td>
+				  </tr>
+				  <tr>
+					<td>GameSpot: 9/10</td>
+					<td>VideoGamer.com: 8/10</td>
+				  </tr>
+				</table>
+				</p>
+			</div>		
+		</div>
+		<div id="phai">
+		</div>
+		<div style="background-color: #222222; width: 100%; height:250px;position: absolute ;top:800px">
+				<h1 align="center" style="color:white;font-family: sans-serif;">Có thể bạn quan tâm</h1>
+				<marquee direction="left" scrolldelay="0" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+					<a href="#"><img src="./images/se.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+					<a href="#"><img src="./images/mh.png" title="Xem Chi tiết" width="250" height="200" /></a>
+					<a href="#"><img src="./images/dso.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+					<a href="#"><img src="./images/fp.jpg"  title="Xem Chi tiết" width="250" height="200" /></a>
+					<a href="#"><img src="./images/p4g.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+					<a href="#"><img src="./images/c6.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+				</marquee>
+			</div>
+</body>
+</html>
