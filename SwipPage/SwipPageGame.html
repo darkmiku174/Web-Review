@@ -26,16 +26,56 @@
             height: 600px;
             }
             button{
-            position: absolute;
-            top: 70%;
-            left: 35%;
-            background-color: transparent;
-            font-weight: bold;
-            font-size: 50px;
-            border: 3px solid #f1f1f1;
-            color: #555555;
-            padding: 20px;
-            text-align: center;
+                top: 70%;
+                left: 30%;
+                height: 100px;
+                width: 500px;
+                position: absolute;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                font-weight: bold;
+                font-size: 50px;
+                color: #555555;
+                padding: 20px;
+                text-align: center;
+            }
+            button:before {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                border: 5px solid transparent;
+                bottom: 0;
+                left: 0;
+                box-sizing: border-box;
+            }
+            button:hover:before{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-right: none;
+                border-bottom: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
+            }
+            button:after {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                top: 0;
+                right: 0;
+                box-sizing: border-box;
+            }
+            button:hover:after{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-left: : none;
+                border-top: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
             }
         </style>
     </head>
@@ -43,118 +83,118 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(./images/game/se.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/warhammer.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/godofwar.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/metalgear5.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/ds.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/ghostoftsushima.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/thelastofus.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/animalcrossing.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/control.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/tw.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/mh.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/dso.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/fp.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/c6.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/p4g.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/cbp.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/darkestdungeon.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/bendy.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/dontstarve.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/dokidoki.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/gorogoa.jpeg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/gris.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/katana0.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/littlenightmares.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/ori.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/thiswarofmine.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/bloodstained.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/codevein.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/ff7r.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/devilmaycry5.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/enterthedungeon.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/hollowknight.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/nioh2.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/orwell.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/riskofrain2.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/SayonaraWildHearts.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/shadowtactics.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/game/valianthearts.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
             </div>
             <div class="swiper-pagination"></div>

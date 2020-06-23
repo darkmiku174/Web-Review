@@ -6,161 +6,203 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="./package/css/swiper.min.css">
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
             body {
-            background-image: url("./purplesky.jpg");
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color:#000;
-            margin: 0;
-            padding: 0;
+                background-image: url("./purplesky.jpg");
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color:#000;
+                margin: 0;
+                padding: 0;
             }
             .swiper-container {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
+                align-items: center;
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
             .swiper-slide {
-            background-position: center;
-            background-size: cover;
-            width: 1200px;
-            height: 600px;
+                background-position: center;
+                background-size: cover;
+                width: 1200px;
+                height: 600px;
             }
             button{
-            position: absolute;
-            top: 70%;
-            left: 35%;
-            background-color: transparent;
-            font-weight: bold;
-            font-size: 50px;
-            border: 3px solid #f1f1f1;
-            color: #555555;
-            padding: 20px;
-            text-align: center;
+                top: 70%;
+                left: 30%;
+                height: 100px;
+                width: 500px;
+                position: absolute;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                font-weight: bold;
+                font-size: 50px;
+                color: #555555;
+                padding: 20px;
+                text-align: center;
+            }
+            button:before {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                border: 5px solid transparent;
+                bottom: 0;
+                left: 0;
+                box-sizing: border-box;
+            }
+            button:hover:before{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-right: none;
+                border-bottom: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
+            }
+            button:after {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                top: 0;
+                right: 0;
+                box-sizing: border-box;
+            }
+            button:hover:after{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-left: : none;
+                border-top: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
             }
         </style>
     </head>
     <body>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(./images/lightnovel/overlord.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                <div class="swiper-slide" style = "background-image:url(./images/lightnovel/overlord.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                  <div class="swiper-slide" style="background-image:url(./images/lightnovel/mushishi.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/fullmetal.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/tatami.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/onepunchman.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/berserk.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/gintama.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/monogatari.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/loveiswar.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/deathnote.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/assassinclassroom.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/rezero.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/slamdunk.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/kuroko.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/tokyoghoul.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/inuyasha.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/nisekoi.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/boringgirlfriend.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/yahari.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/relife.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/angeldensetsu.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/gekkanshoujo.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/plundere.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/bakatotest.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/bokugainai.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/ahogirl.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/fairytail.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/nhk.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/beelzebub.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/grandblue.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/konosuba.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/bungakushoujo.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/gjbu.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/another.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/chuunibyo.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/durarara.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/aoharu.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/bleach.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/eromanga.png)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(./images/lightnovel/inoubattle.jpg)">
-                    <button>Tìm Hiểu thêm</button>
+                    <button>Tìm Hiểu Thêm</button>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
