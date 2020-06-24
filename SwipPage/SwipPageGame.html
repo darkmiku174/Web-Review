@@ -1,80 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="./package/css/swiper.min.css">
- <style>
-    body {
-      background-image: url("../DangKy/night.png");
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 1000px;
-      height: 500px;
-	 }
-	a{
-	position: absolute;
-    top: 70%;
-    left: 30%;
-	color: 	#555555;
-	font-weight: bold;
-	font-size: 50px;
-	border: 3px solid #f1f1f1;
-	padding: 20px;
-    text-align: center;
-    
-		
-	 }
-  </style>
-</head>
-<body>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(./images/se.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/mgs.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/ds.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/tw.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/mh.png)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/dso.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/fp.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/c6.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/p4g.jpg)"><a href="#">Tìm Hiểu Thêm</a></div>
-      <div class="swiper-slide" style="background-image:url(./images/cbp.png)"><a href="#">Tìm Hiểu Thêm</a></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <script src="./package/js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', 
-	{
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-     },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Swiper demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="./package/css/swiper.min.css">
+        <style>
+            body {
+            background-image: url("./night.png");
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+            }
+            .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            }
+            .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 1200px;
+            height: 600px;
+            }
+            button{
+                top: 70%;
+                left: 30%;
+                height: 100px;
+                width: 500px;
+                position: absolute;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                font-weight: bold;
+                font-size: 50px;
+                color: #555555;
+                padding: 20px;
+                text-align: center;
+            }
+            button:before {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                border: 5px solid transparent;
+                bottom: 0;
+                left: 0;
+                box-sizing: border-box;
+            }
+            button:hover:before{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-right: none;
+                border-bottom: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
+            }
+            button:after {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                top: 0;
+                right: 0;
+                box-sizing: border-box;
+            }
+            button:hover:after{
+                height: 100px;
+                width: 500px;
+                border: 5px solid #f1f1f1;
+                border-left: : none;
+                border-top: none;
+                transition: height 0.5s linear,
+                            width 0.5s linear 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./images/game/se.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/warhammer.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/godofwar.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/metalgear5.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/ds.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/ghostoftsushima.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/thelastofus.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/animalcrossing.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/control.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/tw.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/mh.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/dso.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/fp.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/c6.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/p4g.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/cbp.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/darkestdungeon.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/bendy.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/dontstarve.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/dokidoki.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/gorogoa.jpeg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/gris.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/katana0.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/littlenightmares.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/ori.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/thiswarofmine.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/bloodstained.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/codevein.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/ff7r.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/devilmaycry5.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/enterthedungeon.png)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/hollowknight.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/nioh2.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/orwell.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/riskofrain2.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/SayonaraWildHearts.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/shadowtactics.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/game/valianthearts.jpg)">
+                    <button>Tìm Hiểu Thêm</button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    <script src="./package/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', 
+        {
+            effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    </body>
 </html>
