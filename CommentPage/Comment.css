@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  background: #222222;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid #000;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li.logo{
+  color: #f2f2f2;
+  flex: 1;
+  font-size: 40px;
+  font-weight: 700;
+}
+nav ul div.items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+nav ul div.items a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 15px;
+}
+nav ul div.items a:hover{
+  color: aqua;
+}
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+}
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+/*  border-radius: 5px 0 0 5px;*/
+}
+nav ul .search-icon .icon{
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+  background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+  color: #222222;
+  font-size: 18px;
+}
+nav ul li.btn{
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+nav ul li.btn span{
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#trai {
+	padding-top:30px;
+	width: 15%;
+	height: 800px;
+	float: left;
+	background-color: white;
+}
+#giua {
+	width: 85%;
+	min-height:  height: 800px;
+	float: left;
+	background-color: white;
+}
+/*
+#giuatrai{
+	padding-top: 10px;
+	width: 60%;
+	height: 800px;
+	float: left;
+	background-color: white;
+	text-align: justify;
+}
+*/
+/*
+#phai {
+	width: 15%;
+	min-height: 800px;
+	float: left;
+	background-color: white;
+}
+*/
+
+
