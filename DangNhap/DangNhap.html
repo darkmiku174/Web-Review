@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Đăng nhập vào website</title>
+        <title>Đăng nhập</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,9 +9,10 @@
     </head>
     <body>
 		<header>
-			<img src="Logo2.jpg" style="width: 100%;" />
+			<img src="Logo2.jpg" style="width: 100%; height: 75px" />
 		</header>
         <main>
+            <img src="./backgroundimage.jpg" alt="Ảnh bị lỗi" class="background">
             <div class="container">
                 <div class="login-form">
                     <form action="../Main/MainPage.html" method="get">
@@ -19,7 +20,7 @@
                         <input type="text" placeholder="Username" class="input-box">
                         <input type="password" placeholder="Password" class="input-box">
                         <div class="btn-box">
-                            <button type="submit">
+                            <button type="submit" class="animation-button">
                                 Đăng nhập
                             </button>
                         </div>
@@ -27,7 +28,7 @@
                     <form action="../DangKy/DangKy.html" method="get">
                         <div class="dk">
                             <center><h1>Bạn chưa có tài khoản ?</h1></center>
-                            <button type="submit" class="block">
+                            <button type="submit" class="block animation-button">
                                 Hãy tham gia cùng chúng mình
                             </button>
 					   </div>

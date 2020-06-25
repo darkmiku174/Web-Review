@@ -8,16 +8,19 @@
 }
 
 header {
-    height: 110px;
+    height: 75px;
+    position: relative;
 }
-
 main {
-    min-height: 680px;
-    padding: 7.5px 15px;
-    background-image: url('../../test1.jpg');
-    background-size: 100% 700px;
+    padding: 7.5px 0px;
+    align-items: center;
 }
-
+.background{
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    filter: blur(8px);
+}
 .container {
     width: 100%;
     max-width: 1200px;
@@ -29,7 +32,7 @@ main {
     width: 100%;
     max-width: 400px;
     margin: 150px 0 0 400px;
-    background-color: transparent;
+    background-color: black;
     padding: 15px;
     border: 2px; 
     border-radius: 10px;
@@ -41,7 +44,7 @@ h1 {
     color: white;
     font-size: 26px;
     margin-bottom: 30px;
-    background: black;
+    background-color: black;
 }
 
 .input-box{
@@ -63,8 +66,9 @@ h1 {
     width: 200px;
     padding: 9px 15px;
     border-radius: 2px;
-    background-color: #009999;
-    color: #ffffff;
+    margin-left: 170px;
+    background-color: #fff;
+    color: black;
     border: none;
     outline: none;
     cursor: pointer;
@@ -77,22 +81,22 @@ h1 {
     top: 15px;
     left: 600px;
 }
-
 .block {
     display: block;
     width: 400px;
     border: none;
-    background-color: #009999;
+    background-color: #fff;
     padding: 14px 28px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    color: black;
 }
 .wrapper{
     margin: 0 0 0 15%;
 }
 .wrapper button{
-    color: #9990FA;
+    color: black;
     font-size: inherit;
     font-weight: 700;
     position: relative;
@@ -121,7 +125,7 @@ h1 {
     font-size: 35px;
 }
 .wrapper .socials:hover{
-    color: red;
+    color: gray;
 }
 .wrapper .socials:before, .wrapper .socials:after {
     top: 0;
@@ -131,17 +135,17 @@ h1 {
     border: 2px solid transparent;
 }
 .wrapper .socials:hover:before{
-    border-top-color: red;
-    border-right-color: red;
-    border-bottom-color: red;
+    border-top-color: gray;
+    border-right-color: gray;
+    border-bottom-color: gray;
     transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
 }
 .wrapper .socials:after{
     border: 0px solid transparent;
 }
 .wrapper .socials:hover:before{
-    border-top: 2px solid red;
-    border-left-color: red;
+    border-top: 2px solid gray;
+    border-left-color: gray;
     transform: rotate(270deg);
     transition: transform 0.4s linear 0s, border-left-color 0s linear 0.35s;
 }
@@ -154,4 +158,30 @@ h1 {
 }
 h2{
     margin-left: 400px;
+    position: relative;
+}
+.animation-button{
+    opacity: 0.9;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.animation-button:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    content: "";
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 0;
+    height: 100%;
+}
+.animation-button:hover:before{
+    width: 100%;
 }
