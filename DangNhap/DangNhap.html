@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Đăng nhập vào website</title>
+        <title>Đăng nhập</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="./CssDangNhap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
 		<header>
-			<img src="Logo2.jpg"/>
+			<img src="Logo2.jpg" style="width: 100%; height: 75px" />
 		</header>
         <main>
+            <img src="./backgroundimage.jpg" alt="Ảnh bị lỗi" class="background">
             <div class="container">
                 <div class="login-form">
-                    <form>
-                        <h1>MEGP.COM Đăng Nhập</h1>
+                    <form action="../Main/MainPage.html" method="get">
+                        <h1><center>MEGP.COM Đăng Nhập</center></h1>
                         <input type="text" placeholder="Username" class="input-box">
-                        <input type="password" placeholder="Mật khẩu" class="input-box">
+                        <input type="password" placeholder="Password" class="input-box">
                         <div class="btn-box">
-                            <button type="submit">
-                                Tham Gia Cùng Bọn Mình 
-                            </button>
-                        </div>
-                        <div class="dk">
-                            <center><h1>Bạn đã có tài khoản ?</h1></center>
-                            <button type="submit" class="block">
+                            <button type="submit" class="animation-button">
                                 Đăng nhập
                             </button>
+                        </div>
+                    </form>
+                    <form action="../DangKy/DangKy.html" method="get">
+                        <div class="dk">
+                            <center><h1>Bạn chưa có tài khoản ?</h1></center>
+                            <button type="submit" class="block animation-button">
+                                Hãy tham gia cùng chúng mình
+                            </button>
 					   </div>
-                    </form>	
+                    </form>
                 </div>
+            </div>
+            <h2>Login With</h2>
+            <div class="wrapper">   
+                <button class="socials round">
+                    <i class="fa fa-facebook"></i>
+                </button>
+                <button class="socials round">
+                    <i class="fa fa-google"></i>
+                </button>
+                <button class="socials round">
+                    <i class="fa fa-twitter"></i>
+                </button>
             </div>
         </main>
     </body>

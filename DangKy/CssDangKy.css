@@ -8,79 +8,180 @@
 }
 
 header {
-  height: 150px;
+    height: 75px;
+    position: relative;
 }
-
 main {
-  background-image: url("night.png");
-  background-repeat: no-repeat;
-/*  background-color: white;*/
-  min-height: 300px;
-  padding: 7.5px 15px;
+    padding: 5px 0px;
+    align-items: center;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 710px;
+    filter: blur(4px);
 }
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .login-form {
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #ffffff;
-  padding: 15px;
-  border: 2px; 
-  border-radius: 10px;
-  position: relative;
-  right: 300px;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px 0 0 400px;
+    background-color: white;
+    padding: 15px;
+    border: 2px; 
+    border-radius: 10px;
+    position: relative;
+    right: 300px;
 }
 
 h1 {
-  color: #009999;
-  font-size: 20px;
-  margin-bottom: 30px;
+    color: black;
+    font-size: 26px;
+    margin-bottom: 30px;
+    background-color: white;
 }
 
 .input-box{
-  margin-bottom: 40px;
-  padding: 7.5px 15px;
-  width: 100%;
-  border: 1px solid #cccccc;
-  outline: none;
+    margin-bottom: 40px;
+    padding: 7.5px 15px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 16px;    
 }
 
 .btn-box {
-  text-align: right;
-  margin-top: 5px;
+    text-align: right;
+    margin-top: 5px;
 }
 
 .btn-box button {
-  width: 370px;
-  padding: 9px 15px;
-  border-radius: 2px;
-  background-color: #009999;
-  color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
+    width: 100%;
+    padding: 9px 15px;
+    border-radius: 2px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
 }
 
 .dk {
-  position: absolute;
-  top: 15px;
-  left: 600px;
+    position: absolute;
+    top: 15px;
+    left: 600px;
+}
+.block {
+    display: block;
+    width: 400px;
+    border: none;
+    background-color: black;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    
+    color: #fff;
+}
+.wrapper{
+    margin: 0 0 0 15%;
+}
+.wrapper button{
+    color: white;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+    background: none;
+    border: 0;
+    margin-left: 50px;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    box-shadow: inset 0 0 0 2px black;
+    cursor: pointer;
+}
+.wrapper button:before, .wrapper button:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wrapper .socials{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+}
+.wrapper .socials i{
+    font-size: 35px;
+}
+.wrapper .socials:hover{
+    color: gray;
+}
+.wrapper .socials:before, .wrapper .socials:after {
+    top: 0;
+    left: 0;
+}
+.wrapper .socials:before{
+    border: 2px solid transparent;
+}
+.wrapper .socials:hover:before{
+    border-top-color: gray;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+.wrapper .socials:after{
+    border: 0px solid transparent;
+}
+.wrapper .socials:hover:before{
+    border-top: 2px solid gray;
+    border-left-color: gray;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-color 0s linear 0.35s;
+}
+.wrapper .round{
+    border-radius: 100%;
+    box-shadow: none;
+}
+.wrapper .round:before, .wrapper .round:after{
+    border-radius: 100%;
+}
+h2{
+    margin-left: 400px;
+    position: relative;
+    color: white;
+}
+.animation-button{
+    opacity: 0.9;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
 }
 
-.block {
-  display: block;
-  width: 300px;
-  border: none;
-  background-color: #009999;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
+.animation-button:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    content: "";
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0;
+}
+.animation-button:hover:before{
+    height: 100%;
 }
