@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ReviewPage</title>
+		<link rel="stylesheet" href="../Comment.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		</head>
+	<body>
+		<script>
+			$('nav ul li.btn span').click(function(){
+				$('nav ul div.items').toggleClass("show");
+				$('nav ul li.btn span').toggleClass("show");
+			});
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}	
+		</script>
+		<nav>
+			<ul>
+				<li class="logo">ME<span style="color: aqua">GP.COM</span></li>
+				<li class="btn"><span class="fas fa-bars"></span></li>
+				<div class="items">
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Game</a></li>
+					<li><a href="#">Phim</a></li>
+					<li><a href="#">Truyện</a></li>
+					<li><a href="#">Giới Thiệu</a></li>
+				</div>
+				<li class="search-icon">
+					<input type="search" placeholder="Tìm Kiếm">
+						<label class="icon">
+						<span class="fas fa-search"></span>
+					</label>
+				</li>
+			</ul>
+		</nav>
+		<p><h1 align="center" style="position: absolute; top: 450px; color: white">
+		Mushishi – Khúc ca của trời đất trên đôi vai kẻ độc hành.
+		</h1></p>
+		<img src="../images3/m1.jpg" width="100%" height="450">
+		<div id="trai" style="font-size: 20px;">
+			<p style="padding: 10px 0 0 0;color: aqua"><b>Thông tin truyện</b></p>
+			<p>Mushishi</p>
+			<p style="padding: 10px 0 0 0;color: aqua"><b>Tác giả</b></p>
+			<p>Yuki Urushibara</p>
+			<p style="padding: 10px 0 0 0;color: aqua"><b>Phát hành bởi</b></p>
+			<p>Kodansha</p>
+		</div>
+		<div id="giua" style="font-size: 20px;">
+			<p style="padding: 20px 0 20px 0"><b>
+			“	Mặt trời lên rồi lại lặn, </br>
+
+			Bông hoa kia sớm nở tối tàn. </br>
+
+			Ánh dương tuy giấu mình nhưng vẫn dậy, </br>
+
+			Phiến hoa này đâu phải thứ hương xưa.”</b></p>
+			<img src="../images3/m2.jpg" width="90%" height="500" />
+			<p style="padding: 20px 0 0 0">Lần đầu tiên tôi được chìm vào trong khung cảnh trong xanh của một miền đất xa xôi với thời gian vô định, là khoảng ba năm về trước, khi tôi nằm trên ghế dài, trên chuyến xe khách chạy từ thủ đô lên sapa. Một lòng háo hức lạ kì, tôi thật nhanh muốn thoát ra khỏi bụi bặm thường nhật, lao thật nhanh vào rừng cây sâu thẳm. Chưa ai hỏi liệu tôi muốn sống ở đâu, sống như thế nào, nhưng có vẻ như đất trời đã thấu hiểu và đáp lời tôi, qua khung cửa sổ của chiếc xe đang từ từ vượt dốc với những cú rung lắc bất chợt và cung đường gập ghềnh.Cchiếc ipad trong tay tôi, lúc đó bất ngờ nhảy sang một bộ phim hoạt hình mới, tôi không nghĩ đó là tình cờ, bởi tôi đã được gặp anh, người đã dẫn tôi đi vào thế giới xanh biếc ấy.
+			</p>	
+			<p style="padding: 20px 0 20px 0">Ginko, người cũng như tên, sở hữu mái tóc bạc màu che khuất đi con ngươi bên trái. lai lịch không rõ ràng, người ta chỉ biết anh với dáng điệu của một thầy thuốc đi khắp nơi tìm bệnh. xung quanh anh tỏa ra một thứ hào quang dịu nhẹ, che lấp đi vẻ bí ẩn và nội tâm ẩn khuất. ginko đi khắp nơi, trên vai đeo thùng gỗ, tới từng ngôi làng hẻo lánh, từng khu rừng sáng tối âm u. theo bước chân anh, thiên nhiên đất nước nhật đã hiện ra muôn màu và trong trẻo như thế. xuân, hạ, thu, đông, ngày mưa tháng nắng, lá đọng sương tan, hồ nước bóng nắng, mỗi khung cảnh đều gây choáng ngợp bởi độ tỉ mỉ trong chi tiết và màu sắc sử dụng. nếu bỏ qua yếu tố nội dung, đây có thể trở thành một cuốn phim tài liệu về vẻ đẹp hoang sơ nơi xứ ấy. nhưng hãy đừng quên người dẫn dắt ta trên đường, bởi anh chính là điểm nhấn của toàn bộ câu chuyện.
+			</p>
+			<img src="../images3/m3.jpg" width="90%" height="500" />
+			<p style="padding: 20px 0 20px 0">Ginko mang danh thầy thuốc, nhưng thực chất anh mang một năng lực kì lạ, đó là có thể nhận biết và tiếp xúc với những sinh vật nhỏ bé trong không khí mà người thường không thể thấy. chúng là tác nhân gây ra những biến đổi của tự nhiên và con người, kể cả những rắc rối. mushi là cách người ta gọi chúng, và mushishi chính là những người sở hữu năng lực như của ginko, những vị trùng sư quyền năng. sự hiện diện của vô vàn loài mushi khiến ta nhận ra, trên thế giới này, cỏ cây, chim chóc, hươu nai, con người chúng ta không hề cô độc. chúng cũng là một phần của vòng tuần hoàn sự sống, cũng là một phần của quá trình tiến hóa và phát triển. chúng biết cách sinh sôi, nảy nở, biết náu mình, biết cảm nhận thế giới xung quanh, cũng có cái gọi là nguồn cội. vậy ginko và những người như anh ấy, có vai trò gì trong dòng chảy này. có thể anh miệt mài đi chữa chạy cho người bị mushi gây bệnh, có thể anh tìm cách ngăn chúng gieo hồng thủy, thiên tai. hoặc có thể, trong thâm tâm, anh chỉ muốn cùng chúng, khẳng định sự tồn tại trên cuộc đời, cùng ngắm nhìn thế gian rộng lớn, và đi sâu vào tiềm thức của cội nguồn. con mắt trái của anh, không ai nói, nhưng đều biết đó là do mushi gây ra, nhưng vậy thì sao chứ, nguời đàn ông này chưa từng có ý muốn trả thù để hủy diệt một sự sống nào. tôi tự hỏi liệu anh có như tôi, có tha thiết yêu thương cái cuộc đời nay đây mai đó, để lạc mình vào không gian và thời gian vô định.
+			</p>
+			<img src="../images3/m4.jpg" width="90%" height="500" />
+			<p style="padding: 20px 0 20px 0">Quay trở lại thiên nhiên in dấu bước chân người thầy thuốc, tôi cảm giác như tác giả và người làm phim này, muốn đưa đến cho tôi một dạng thông điệp về thời gian. tôi cứ bị ám ảnh bởi hai chữ “tồn tại”, bởi từ ngữ đó đã nói lên rất nhiều về bộ phim. người dân bình thường khi bị mushi quấy nhiễu, có người lo lắng, hoảng sợ, có kẻ lại thật bình thản và chấp nhận đó là một phần của số phận, chấp nhận sự hiện diện của mushi. con người, mặc nhiên không thể cưỡng lại sự hấp dẫn của dòng komiyaku đầy quyền năng, ẩn dụ cho dòng thời gian không thể nắm bắt. cái cách mà ginko và mọi người trong phim ứng xử với cuộc đời của chính họ, có phần gì đó giống với phản xạ của tự nhiên. không ồn ào, căng thẳng, bí bách, con người nơi đây cứ bình lặng như thế, đầy suy tư như thế. Vòng tuần hoàn của sự sống cứ như vậy diễn ra, tạo thành khúc ca của chiếc lá, hơi thở của thu phong, nhẹ nhàng tựa mình trên đôi vai của người con trai ấy. liệu chúng có cảm thấy bình yên giống như tôi khi nằm trên chuyến xe hướng về miền xanh thẳm nọ?<br>
+			Liệu tôi có được như thế, được mãi tươi xanh và an lành trong tâm thức?
+			</p>
+			<img src="../images3/m5.jpg" width="90%" height="500" />
+			</br>
+			</br>
+			<h3>Bình Luận</h3>
+			</br>
+			<form>
+				<input type="text" value="Tên của bạn" style="width: 30%;height: 30px"><br>
+				</br>
+				<textarea style="width: 90%;height: 70px">Nhập comment ở đây </textarea>			
+			</form>
+			</br>
+			<b>Bạn A</b>
+			</br>
+			<p>Truyện này đọc dễ bị cuốn ghê</p>
+			</br>
+			<b>Bạn B</b>
+			</br>
+			<p>Công nhận tác giả vẽ đẹp thật</p>
+			</br>
+			<b>Bạn C</b>
+			</br>
+			<p>Main đẹp trai quá</p>
+		</div>
+		<div style="background-color: #222222; width: 100%; height:250px;position: absolute ;top:4100px">
+			<h1 align="center" style="color:white;font-family: sans-serif;">Có thể bạn quan tâm</h1>
+			<marquee direction="left" scrolldelay="0" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+				<a href="#"><img src="../images3/l1.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+				<a href="#"><img src="../images3/l2.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+				<a href="#"><img src="../images3/l3.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+				<a href="#"><img src="../images3/l4.jpg"  title="Xem Chi tiết" width="250" height="200" /></a>
+				<a href="#"><img src="../images3/l5.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+				<a href="#"><img src="../images3/l6.jpg" title="Xem Chi tiết" width="250" height="200" /></a>
+			</marquee>
+		</div>
+	</body>
+</html>
